@@ -85,11 +85,11 @@ function reset() {
 // converts hex color to rgba to allow change to body's background-color opacity
 function convertHex(hex,opacity){
     hex = hex.replace('#','');
-    r = parseInt(hex.substring(0,2), 16);
-    g = parseInt(hex.substring(2,4), 16);
-    b = parseInt(hex.substring(4,6), 16);
+    let r = parseInt(hex.substring(0,2), 16);
+    let g = parseInt(hex.substring(2,4), 16);
+    let b = parseInt(hex.substring(4,6), 16);
 
-    result = 'rgba('+r+','+g+','+b+','+opacity+')';
+    let result = 'rgba('+r+','+g+','+b+','+opacity+')';
     return result;
 }
 
